@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  .centering-image {
+  <style>
+    .center-image{
     display: flex;
     justify-content: center;
-  }
-
-  main {
+    }
+    
+    main{
     display: flex;
-    position: relative; 
-  }
-
-  section {
+    position: relative;
+    }
+   
+    section{
     flex: 1;
     padding: 7px;
     border: 2px solid #ccc;
-    box-sizing: border-box; 
-    position: relative; 
-  }
-
-  .left-column {
-    border-right: none;
-  }
-
-  .right-column {
-    border-left: none;
-  }
-
-  hr.divider {
-    display: none;
-  }
-
-  section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: #ccc; 
-    left: calc(100% + 2px); 
-  }
-</style>
+    box-sizing: border-box;
+    position: relative;
+    }
+  </style>
 </head>
 <body>
-<h2 style="text-align:center;">About Us</h2>
-<p style="text-align:center;">We are a company dedicated to providing excellent services to our customers.</p>
-<div class="centering-image">
-  <img src="https://thebusinesswiz.co.tz/wp-content/uploads/2023/07/SWD2.jpg" width="600" height="400">
-</div>
-<h2 style="text-align:center;">Our services</h2>
-<main>
-  <section class="left-column">
-    <h2 style="text-align: center;">Web Development</h2>
-    <p style="text-align: center;">We specialize in creating responsive and user-friendly websites.</p>
-    <img src="https://media.licdn.com/dms/image/D4D12AQEkD151TXg8Ig/article-cover_image-shrink_720_1280/0/1702962448246?e=2147483647&v=beta&t=Sis84HqxWwvSPc0roMD0ZZBnlwPS4T8ScKiGwVRIhDM" width="600" height="400">
-  </section>
-  <section class="right-column">
-    <h2 style="text-align: center;">Graphic Design</h2>
-    <p style="text-align: center;">Our talented designers can bring your ideas to life with stunning visuals.</p>
-    <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/331466851/original/746ad053535e2664eb179d9379b634d72cd0eab8/do-any-graphic-design-work.jpg" width="600" height="400">
-  </section>
-</main>
+  <h2 style="text-align: center"> 
+    About Us
+  </h2>
+  <p style="text-align: center">
+    We are a company dedicated to providing excellent services to our customers.
+  </p>
+  <block class="center-image">
+    <img src="https://thebusinesswiz.co.tz/wp-content/uploads/2023/07/SWD2.jpg" width="600" height="400">
+  </block>
+  <h2 style="text-align: center"> 
+    Our services
+  </h2>
+  <main>
+    <section >
+      <h2 style="text-align: center">
+        Web Development
+      </h2>
+      <p style="text-align: center">
+        We specialize in creating responsive and user-friendly websites.
+      </p>
+      <img src="https://media.licdn.com/dms/image/D4D12AQEkD151TXg8Ig/article-cover_image-shrink_720_1280/0/1702962448246?e=2147483647&v=beta&t=Sis84HqxWwvSPc0roMD0ZZBnlwPS4T8ScKiGwVRIhDM" width="600" height="400">
+    </section>
+    <section >
+      <h2 style="text-align: center">
+        Graphic Design
+      </h2>
+      <p style="text-align: center">
+        Our talented designers can bring your ideas to life with stunning visuals.
+      </p>
+      <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/331466851/original/746ad053535e2664eb179d9379b634d72cd0eab8/do-any-graphic-design-work.jpg" width="600" height="400">
+    </section>
+  </main>
 </body>
 </html>
